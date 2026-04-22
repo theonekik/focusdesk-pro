@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-bg: #f8fafc;
+  --app-text: #0f172a;
+}
+
+[data-theme='dark'] {
+  --app-bg: #0f172a;
+  --app-text: #f8fafc;
+}
+
+body {
+  background-color: var(--app-bg);
+  color: var(--app-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card-premium {
+  @apply bg-white dark:bg-dark-800 rounded-premium shadow-premium p-6 transition-all duration-200;
+}
