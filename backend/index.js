@@ -14,10 +14,14 @@ const taskRoutes = require('./routes/tasks');
 const pomodoroRoutes = require('./routes/pomodoro');
 const notesRoutes = require('./routes/notes');
 const habitRoutes = require('./routes/habits');
+const plannerRoutes = require('./routes/planner');
 app.use('/api/tasks', taskRoutes);
 app.use('/api/pomodoro', pomodoroRoutes);
 app.use('/api/notes', notesRoutes);
 app.use('/api/habits', habitRoutes);
+app.use('/api/planner', plannerRoutes);
+
+// Health check
 
 // Health check
 

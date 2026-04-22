@@ -15,6 +15,7 @@ import TaskManager from './components/TaskManager';
 import Pomodoro from './components/Pomodoro';
 import Notes from './components/Notes';
 import HabitTracker from './components/HabitTracker';
+import DailyPlanner from './components/DailyPlanner';
 
 const SidebarItem = ({ icon: Icon, label, active, onClick }) => (
   <div
