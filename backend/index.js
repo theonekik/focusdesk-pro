@@ -13,9 +13,13 @@ app.use(express.json());
 const taskRoutes = require('./routes/tasks');
 const pomodoroRoutes = require('./routes/pomodoro');
 const notesRoutes = require('./routes/notes');
+const habitRoutes = require('./routes/habits');
 app.use('/api/tasks', taskRoutes);
 app.use('/api/pomodoro', pomodoroRoutes);
 app.use('/api/notes', notesRoutes);
+app.use('/api/habits', habitRoutes);
+
+// Health check
 
 // Health check
 
