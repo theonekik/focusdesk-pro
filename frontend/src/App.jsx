@@ -16,6 +16,7 @@ import Pomodoro from './components/Pomodoro';
 import Notes from './components/Notes';
 import HabitTracker from './components/HabitTracker';
 import DailyPlanner from './components/DailyPlanner';
+import UtilityTools from './components/UtilityTools';
 
 const SidebarItem = ({ icon: Icon, label, active, onClick }) => (
   <div
@@ -118,8 +119,8 @@ const App = () => {
                 {activeTab === 'pomodoro' && <Pomodoro />}
                 {activeTab === 'notes' && <Notes />}
                 {activeTab === 'habits' && <HabitTracker />}
-                {activeTab === 'planner' && <div className="text-xl text-slate-600 dark:text-slate-400">Daily Planner is under construction...</div>}
-                {activeTab === 'utilities' && <div className="text-xl text-slate-600 dark:text-slate-400">Utility Tools are under construction...</div>}
+                {activeTab === 'planner' && <DailyPlanner />}
+                {activeTab === 'utilities' && <UtilityTools />}
               </div>
             </main>
           </div>
