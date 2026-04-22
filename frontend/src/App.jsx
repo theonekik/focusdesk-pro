@@ -17,6 +17,7 @@ import Notes from './components/Notes';
 import HabitTracker from './components/HabitTracker';
 import DailyPlanner from './components/DailyPlanner';
 import UtilityTools from './components/UtilityTools';
+import Dashboard from './components/Dashboard';
 
 const SidebarItem = ({ icon: Icon, label, active, onClick }) => (
   <div
@@ -114,7 +115,7 @@ const App = () => {
               </header>
 
               <div className="transition-all duration-300">
-                {activeTab === 'dashboard' && <div className="text-xl text-slate-600 dark:text-slate-400">Welcome to your FocusDesk Pro Dashboard. Modules will appear here soon!</div>}
+                {activeTab === 'dashboard' && <Dashboard />}
                 {activeTab === 'tasks' && <TaskManager />}
                 {activeTab === 'pomodoro' && <Pomodoro />}
                 {activeTab === 'notes' && <Notes />}
