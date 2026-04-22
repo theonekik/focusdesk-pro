@@ -11,7 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 const taskRoutes = require('./routes/tasks');
+const pomodoroRoutes = require('./routes/pomodoro');
 app.use('/api/tasks', taskRoutes);
+app.use('/api/pomodoro', pomodoroRoutes);
+
+// Health check
 
 // Health check
 

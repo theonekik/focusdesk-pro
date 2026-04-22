@@ -12,6 +12,7 @@ import {
   Moon
 } from 'lucide-react';
 import TaskManager from './components/TaskManager';
+import Pomodoro from './components/Pomodoro';
 
 const SidebarItem = ({ icon: Icon, label, active, onClick }) => (
   <div
@@ -111,7 +112,7 @@ const App = () => {
               <div className="transition-all duration-300">
                 {activeTab === 'dashboard' && <div className="text-xl text-slate-600 dark:text-slate-400">Welcome to your FocusDesk Pro Dashboard. Modules will appear here soon!</div>}
                 {activeTab === 'tasks' && <TaskManager />}
-                {activeTab === 'pomodoro' && <div className="text-xl text-slate-600 dark:text-slate-400">Pomodoro System is under construction...</div>}
+                {activeTab === 'pomodoro' && <Pomodoro />}
                 {activeTab === 'notes' && <div className="text-xl text-slate-600 dark:text-slate-400">Quick Notes Workspace is under construction...</div>}
                 {activeTab === 'habits' && <div className="text-xl text-slate-600 dark:text-slate-400">Habit Tracker is under construction...</div>}
                 {activeTab === 'planner' && <div className="text-xl text-slate-600 dark:text-slate-400">Daily Planner is under construction...</div>}
